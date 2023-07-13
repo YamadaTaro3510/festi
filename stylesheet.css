@@ -1,0 +1,412 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255, 0.7);
+    z-index: 100;
+}
+
+.header-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-festi {
+    justify-content: flex-start;
+    display: flex;
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: rgb(220, 120, 70);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.header-li {
+    color: black;
+    margin-right: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+} 
+
+.header-btn1 {
+    transition: all 0.3s;
+    margin: 30px;
+}
+
+.header-btn2 {
+    border: 1px black solid;
+    border-radius: 20%;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+    
+}
+.header-btn2:hover {
+    color: black;
+    background-color: rgb(255, 255, 255, 0);
+    /* border: none; */
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main {
+    margin-top: 100px;
+} */
+
+video {
+  height: 700px;
+  width: 100%;
+}
+
+/* .top {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.top::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.3;
+  } */
+
+  .top-container {
+    padding-top: 100px;
+  }
+  .top-title {
+    font-size: 150px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+  }
+  .top-letter {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .explain {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding-top: 50px;
+  }
+
+  .explain-top {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .explain-top-left {
+    margin: 50px;
+  }
+
+  .explain-top-left-title {
+    flex-grow: 1;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    background: linear-gradient(transparent 40%, #eeff00 100%);
+  }
+
+.explain-top-left-letter {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+  .explain-top-right-img {
+    flex-grow: 1;
+    margin-right: 50px;
+  }
+  .explain-down {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .explain-down-right {
+    margin: 50px;
+  }
+
+  .explain-down-right-title {
+    flex-grow: 1;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    background: linear-gradient(transparent 40%, #eeff00 80%);
+  }
+
+.explain-down-right-letter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .explain-down-left-img {
+    flex-grow: 1;
+    margin-left: 50px;
+  }
+/* コラボレーション */
+
+.collaboration {
+  height: 500px;
+}
+
+.collaboration-title {
+  font-size:100px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 100px;
+}
+
+.collaboration-explain {
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: #333 1px solid;
+}
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+   margin:0 auto;
+}
+
+.slider img {
+   width:100%;/*スライダー内の画像を横幅100%に*/
+   height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+   margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+   position: absolute;/*絶対配置にする*/
+   top: 42%;
+   cursor: pointer;/*マウスカーソルを指マークに*/
+   outline: none;/*クリックをしたら出てくる枠線を消す*/
+   border-top: 2px solid #666;/*矢印の色*/
+   border-right: 2px solid #666;/*矢印の色*/
+   height: 15px;
+   width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+   left: -1.5%;
+   transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+   right: -1.5%;
+   transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+   text-align:center;
+ margin:20px 0 0 0;
+}
+
+.slick-dots li {
+   display:inline-block;
+ margin:0 5px;
+}
+
+.slick-dots button {
+   color: transparent;
+   outline: none;
+   width:8px;/*ドットボタンのサイズ*/
+   height:8px;/*ドットボタンのサイズ*/
+   display:block;
+   border-radius:50%;
+   background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+   background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/* コラボレーション */
+/* 注意 */
+
+.note {
+  margin-top: 300px;
+  background-color: black;
+  color: white;
+}
+
+.note-title {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: red 0.5px double;
+}
+
+.note-explain {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* 注意 */
+
+.container {
+  text-align: center;
+}
+
+.head {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#000000;
+  color:#FAFAFA;
+}
+h2 {
+  text-align:center;
+  padding:18px 0 18px 0;
+  font-size: 1.4em;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #FAFAFA;
+}
+:-moz-placeholder {
+   color: #FAFAFA;  
+}
+::-moz-placeholder {
+   color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#000000;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+/* media queries */
+@media (max-width: 700px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#000000;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
